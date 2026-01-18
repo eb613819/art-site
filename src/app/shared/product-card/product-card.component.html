@@ -1,1 +1,11 @@
-<p>product-card works!</p>
+<a class="product-card" [routerLink]="['/product', product.id]">
+
+    <h2 class="product-header">{{ product.title }}</h2>
+    <p class="product-description">{{ product.description }}</p>
+
+    <div class="product-footer">
+        <span class="product-price">${{ product.price }}</span>
+        <button class="cart-button" *ngIf="product.available"></button>
+        <span class="product-unavailable" *ngIf="!product.available">Out of Stock</span>
+    </div>
+</a>

@@ -32,9 +32,10 @@
 }
 
 .nav-right a:hover {
-  color: var(--accent-red);
-  background: var(--hover-bg);
+  color: var(--color-ink);
+  background: var(--accent-blue);
   transform: translateY(-1px); 
+  text-decoration: none;
 }
 
 .nav-right a.active {
